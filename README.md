@@ -42,6 +42,10 @@ extra decisions or simply for debugging.
 
 ![Track](./src/main/resources/track_2.png)
 
+Basically, the function _(or the chain)_ always succeeds and the developer must only handle the result, or a error 
+message _(or object)_, with less need for `try/catch` and/or `if/else` blocks. The errors are pushed outside of the 
+functional core and handled _(e.g. logs, alarms)_ in one spot.
+
 Some use cases for ROI are:
 
 * ETLs
