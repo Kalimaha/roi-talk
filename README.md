@@ -118,8 +118,8 @@ or throw another exception. Also, we need to check the logs to figure out what h
 
 ```kotlin
 fun clientB(url: String): Either<Throwable, Array<Stock>?> =
-    Try.of { RestTemplate().getForObject(url, Array<Stock>::class.java) }
-        .onFailure { println("Something went wrong: $it) }") }
+    Try
+        .of { RestTemplate().getForObject(url, Array<Stock>::class.java) }
         .toEither()
 ```
 
